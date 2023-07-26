@@ -51,6 +51,26 @@ namespace Catalog.Controllers
 
             return CreatedAtAction(nameof(CreateItem), new { Id = item.Id }, item.AsDto());
         }
+
+        [HttpPut("{id}")]
+        public ActionResult UpdateItem(Guid id, UpdateItemDto itemDto)
+        {
+          Item existingItem = repository.GetItem(id);
+            if(existingItem is null)
+            {
+                return NotFound();
+            }
+
+            Item itemToBeUptaded = existingItem with
+            {
+                Name = itemDto.Name,
+                Price = itemDto.Price
+            };
+
+            repository.UpdateItem(itemToBeUptaded);
+
+            return NoContent();
+        }
         
     }
 }
