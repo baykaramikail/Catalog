@@ -1,4 +1,9 @@
 using Catalog.Repositories;
+using Catalog.Settings;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.Serializers;
+using MongoDB.Driver;
 
 namespace Catalog;
 internal class Program
@@ -14,7 +19,16 @@ internal class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
-        builder.Services.AddSingleton<IItemsRepository, InMemItemsRepository>(); // Dependency injection yaptýk
+        BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
+        BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
+
+        builder.Services.AddSingleton<IMongoClient>(serviceProvider =>
+        {
+            var settings = builder.Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
+            return new MongoClient(settings.ConnectionString);
+        });
+
+        builder.Services.AddSingleton<IItemsRepository, MongoDBItemsRepository>(); // Dependency injection yaptýk
 
         var app = builder.Build();
 

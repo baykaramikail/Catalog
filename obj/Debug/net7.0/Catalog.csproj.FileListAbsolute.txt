@@ -31,3 +31,16 @@ C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\obj\Debug\net7.0\refint\C
 C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\obj\Debug\net7.0\Catalog.pdb
 C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\obj\Debug\net7.0\Catalog.genruntimeconfig.cache
 C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\obj\Debug\net7.0\ref\Catalog.dll
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\AWSSDK.Core.dll
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\AWSSDK.SecurityToken.dll
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\DnsClient.dll
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\MongoDB.Bson.dll
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\MongoDB.Driver.dll
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\MongoDB.Driver.Core.dll
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\SharpCompress.dll
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\Snappier.dll
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\ZstdSharp.dll
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\mikai\OneDrive\Masaüstü\My Projects\Catalog\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
