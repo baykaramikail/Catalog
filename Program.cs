@@ -34,6 +34,8 @@ internal class Program
 
         builder.Services.AddSingleton<IItemsRepository, MongoDBItemsRepository>(); // Dependency injection yaptýk
 
+        builder.Services.AddHealthChecks(); // healthcheck yapmak için yazdýk
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -48,6 +50,9 @@ internal class Program
         app.UseAuthorization(); 
 
         app.MapControllers();
+
+        // health check yapmak için yazdýk
+        app.MapHealthChecks("/healthz");
 
         app.Run();
 
