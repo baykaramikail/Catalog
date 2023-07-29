@@ -1,5 +1,7 @@
 ﻿using Catalog.Entities;
 
+// We do not need this file anymore in our project since we set mongodb as our database. 
+
 namespace Catalog.Repositories
 {
     public class InMemItemsRepository : IItemsRepository
@@ -22,7 +24,7 @@ namespace Catalog.Repositories
             return await Task.FromResult(item);
         }
 
-        public async Task CreateItemAsync(Item item)
+        public async Task CreateItemAsync(Item item)                      
         {
             items.Add(item);
             await Task.CompletedTask;
